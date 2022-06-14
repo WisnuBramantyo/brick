@@ -58,25 +58,6 @@ public class stepDefinitions {
     public void userIsRegistered() {
     }
 
-    @Then("user stop browser")
-    public void userStopBrowser() {
-        webDriver.quit();
-    }
-
-    @Given("user open browser {string}")
-    public void userOpenBrowser(String arg0) {
-        webDriver = new ChromeDriver();
-        webDriver.get(arg0);
-    }
-
-    @When("user waiting for {int} seconds")
-    public void userWaitingForSeconds(int wait) throws InterruptedException {
-        Thread.sleep(wait*1000);
-    }
-
-    public static void main(String[] args) {
-        System.out.println("iwak");
-    }
 }
 
 

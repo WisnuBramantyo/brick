@@ -14,10 +14,5 @@ Feature:Register and Login
     Then  User is registered
     Examples:
       |   page_loc    |   first_name    |   last_name   |   email   |   country_code    |   phone_num   |    addr   |   pass    |   conf_pass    |   button    |
-      |   register    |   test first name | test last name  | test1@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
-
-  Scenario:test pararel 1
-    Given user open browser "https://brick-qa-assignment.herokuapp.com/"
-    When user waiting for 6 seconds
-    Then user stop browser
+      |   login    |   test first name | test last name  | test1@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
 

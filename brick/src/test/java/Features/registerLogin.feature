@@ -14,5 +14,5 @@ Feature:Register and Login
     Then  User is registered
     Examples:
       |   page_loc    |   first_name    |   last_name   |   email   |   country_code    |   phone_num   |    addr   |   pass    |   conf_pass    |   button    |
-      |   login    |   test first name | test last name  | test1@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
+      |   register    |   test first name | test last name  | test1@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
 

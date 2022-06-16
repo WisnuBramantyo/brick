@@ -1,5 +1,5 @@
 # brick
-this is a repo for solving technical test from Brick.
+This is a repo for solving technical test from Brick.
 
 I use java combined with cucumber and selenium to create the automation test.
 
@@ -21,3 +21,5 @@ Feature or folder path : <Location you put this repository>/brick/src/test/java/
 Program Arguments :  --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name "^Login using registered account$"
 6. Click build project
 7. Click Run
+
+Here I attached spreadsheets of the test cases and bug documentations : https://docs.google.com/spreadsheets/d/1J06-bVlItr2mREnMBT-BnA0ybonat4SBL7liGa-K3f0/edit?usp=sharing

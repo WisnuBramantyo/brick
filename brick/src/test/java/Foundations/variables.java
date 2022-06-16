@@ -16,6 +16,6 @@ public class variables {
     public String registBtn = "//input[@name='register']";
     public String loginBtn = "//input[@name='login']";
     public String successMsg = "//div[contains(text(),'Check your email to confirm your registration')]";
-
+    public String regMsg = "//div[@id='swal2-content']";
 
 }

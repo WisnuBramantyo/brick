@@ -5,8 +5,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -99,17 +99,42 @@ public class stepDefinitions extends variables {
 
     @Then("User is registered")
     public void userIsRegistered() {
-//        List<WebElement> successReg = webDriver.findElements(By.xpath(statusMsg));
-        try {
-            webDriver.findElements(By.xpath(successMsg));
-            System.out.println("Registration success");
-        }
-        catch (NoSuchElementException e){
-            System.out.println("Registration failed");
-        }
+        //fourth method of conditional statement to check if registration is success or not
+        String result = webDriver.findElement(By.xpath(regMsg)).getText();
+        Assert.assertTrue("Registration failed", result.contains("Check your email to confirm your registration"));
+
+        //first method of conditional statement
+//        if (webDriver.findElement(By.xpath(regMsg)).getText().equalsIgnoreCase("Check your email to confirm your registration")) {
+//            System.out.println("Registration success");
+//        }
+//        else {
+//            System.out.println("Registration failed");
+//
+//        }
+
+        // second method of conditional statement
+//        try {
+//            webDriver.findElements(By.xpath(successMsg));
+//            System.out.println("Registration success");
+//        }
+//        catch (NoSuchElementException e){
+//            System.out.println("Registration failed");
+//        }
+
+        // third method of conditional statement
+//        List<WebElement> successReg = webDriver.findElements(By.xpath(successMsg));
+//        if(successReg.size() != 0){
+//            //If list size is non-zero, element is present
+//            System.out.println("Element present");
+//        }
+//        else{
+//            //Else if size is 0, then element is not present
+//            System.out.println("Element not present");
+//        }
+
     }
 
-    @And("User close the browser")
+    @And("User closes the browser")
     public void userCloseTheBrowser() {
         webDriver.close();
     }

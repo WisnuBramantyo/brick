@@ -7,6 +7,8 @@ Here's the steps to run the automation :
 Preconditions:
 Java installed
 IDE installed (here I'm using Intellij as IDE)
+Chrome installed
+Chromedriver installed
 
 Steps:
 1. Clone the repository

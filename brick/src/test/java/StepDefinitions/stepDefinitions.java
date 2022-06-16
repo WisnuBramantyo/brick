@@ -138,6 +138,19 @@ public class stepDefinitions extends variables {
     public void userCloseTheBrowser() {
         webDriver.close();
     }
+
+    @And("User inputs email or username {string}")
+    public void userInputsEmailOrUsername(String arg0) throws InterruptedException {
+        webDriver.findElement(By.xpath(emailLoginElmt)).sendKeys(arg0);
+        Thread.sleep(1000);
+    }
+
+    @Then("User is logged in")
+    public void userIsLoggedIn() {
+        String result = webDriver.findElement(By.xpath(regMsg)).getText();
+        Assert.assertTrue("Login failed", result.contains("Welcome Back,"));
+
+    }
 }
 
 

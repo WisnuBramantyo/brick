@@ -18,4 +18,7 @@ public class variables {
     public String successMsg = "//div[contains(text(),'Check your email to confirm your registration')]";
     public String regMsg = "//div[@id='swal2-content']";
 
+    public String emailLoginElmt = "//input[@id='your_email']";
+
+
 }

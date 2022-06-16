@@ -15,14 +15,14 @@ Feature:Register and Login
     And   User closes the browser
     Examples:
       |   page_loc    |   first_name    |   last_name   |   email   |   country_code    |   phone_num   |    addr   |   pass    |   conf_pass    |   button    |
-      |   register    |   test first name | test last name  | test33@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
-      |   register    |   test first name | test last name  | test34@acc.com | Indonesia | 89123123123   |           | testing   | testing        |  register   |
+      |   register    |   test first name | test last name  | test@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
+      |   register    |   test first name | test last name  | test2@acc.com | Indonesia | 89123123123   |           | testing   | testing        |  register   |
       |   register    | | | test2@acc.com | Indonesia | 89123123123   |           | testing   | testing        |  register   |
-      |   register    |   test first name | test last name  | test19@acc.com | Indonesia | 89123123123   | gotham city |      |      |  register   |
-      |   register    |   test first name | test last name  | test19@acc.com | Indonesia | | gotham city | testing | testing        |  register   |
-      |   register    |   test first name | test last name  | test19@acc.com | Indonesia | 89123123...   | gotham city | testing | testing        |  register   |
-      |   register    | | | test19@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
-      |   register    || test last name  | test19@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
+      |   register    |   test first name | test last name  | test3@acc.com | Indonesia | 89123123123   | gotham city |      |      |  register   |
+      |   register    |   test first name | test last name  | test4@acc.com | Indonesia | | gotham city | testing | testing        |  register   |
+      |   register    |   test first name | test last name  | test5@acc.com | Indonesia | 89123123...   | gotham city | testing | testing        |  register   |
+      |   register    | | | test6@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
+      |   register    || test last name  | test7@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
 
   @Positive @Register @TC_003
   Scenario Outline:Change country code
@@ -40,7 +40,7 @@ Feature:Register and Login
     And   User closes the browser
     Examples:
       |   page_loc    |   first_name    |   last_name   |   email   |   country_code    |   phone_num   | country_code2 |    addr   |   pass    |   conf_pass    |   button    |
-      |   register    |   test first name | test last name  | test65@acc.com | Indonesia | 89123123123   | Singapore    | gotham city | testing | testing        |  register   |
+      |   register    |   test first name | test last name  | test20@acc.com | Indonesia | 89123123123   | Singapore    | gotham city | testing | testing        |  register   |
 
   @Positive @Login @TC_004
   Scenario Outline:Login using registered account

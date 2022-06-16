@@ -12,7 +12,9 @@ Feature:Register and Login
     And User input confirm password "<conf_pass>"
     When  User clicks "<button>" button
     Then  User is registered
+    And   User closes the browser
     Examples:
       |   page_loc    |   first_name    |   last_name   |   email   |   country_code    |   phone_num   |    addr   |   pass    |   conf_pass    |   button    |
-      |   register    |   test first name | test last name  | test1@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
+      |   register    |   test first name | test last name  | test19@acc.com | Indonesia | 89123123123   | gotham city | testing | testing        |  register   |
+      |   register    |   test first name | test last name  | test2@acc.com | Indonesia | 89123123123   |           | testing   | testing        |  register   |
 
